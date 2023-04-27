@@ -1,7 +1,7 @@
-#include <iostream>
-#include <vector>//vektörleri kullanabilmek için
-#include <time.h>//randomun çalışması için 
-#include <algorithm>//vektörleri sıralama fonksiyonu için 
+#include<iostream>
+#include <vector>
+#include <cstdlib>
+#include <time.h>
 using namespace std;
 
 int main(){
@@ -63,45 +63,27 @@ cout<<"----SON HALI----"<<endl;
         cout<<endl;
     }
     
-cout<<"******VEKTORLERDE KUCUKTEN BUYUGE SIRALAMA******"<<endl;
-cout<<"************************************************"<<endl;
-cout<<"1 BOYUTLU VEKTORLER ICIN"<<endl;
-int boyut,temp2;
-cout<<"Vektorun buyutunu giriniz : ";
-cin>> boyut;
-vector<int>v;
-// vector<vector<int>>::iterator it;// vektor iteratorü tanımı
-// for(it=v.begin();it!=v.end();it++){
-//     cout<< *it <<" ";
-// }
-cout<<"Vektorun siralanmadan onceki hali:"<<endl;
-for(int i = 0; i < boyut; i++){
-    v.push_back((rand()%100)+1);
-    cout<<v[i]<<" ";
-}
-for(int j = 0 ; j<boyut ; j++) // İşlemi garantilemek için
-    for(int i = 0 ; i<boyut ; i++){
-        if(v[i] != v[i+1]){
-            if(v[i]>v[i+1]){
-                            
-            temp2 =v[i];
-            v[i] = v[i+1];
-            v[i+1] = temp2;
-            }
-        }
-    }
-cout<<"\nVektorun siralanmis hali"<<endl;
+// cout<<"******VEKTORLERDE KUCUKTEN BUYUGE SIRALAMA******"<<endl;
+// cout<<"************************************************"<<endl<<endl<<endl;
+// int vsatir,vsutun;
+// cout << "Boyut bilgini girin : ";
+// cin>>vsatir >>vsutun;
 
-for(int i = 0; i < int(v.size()); i++){
-    cout<<v[i]<<" ";
-}
-cout<<"\n2 BOYUTLU VEKTORLER ICIN"<<endl;
-int vsatir,vsutun;
-vector<vector<int>>v; //iki boyutku bir vektor tanımı
-for(int i = 0; i < boyut; i++){
-    v.push_back((rand()%100)+1);
-    cout<<v[i]<<" ";
-}
+// vector<vector<int>> v1(vsatir,vsutun);
+// int sayac=0;
+// int size = v1.size();
+// cout<<"SIZE = "<<size;
+// for(i=0;i<<size;i++){
+//     if(sayac % vsutun == 0){
+//         cout<<endl;
+//         sayac=0;
+//     }
+//     sayi = (rand()%100)+1;
+//     v1.at(v1[i]) = sayi;
+//     cout<<v1.at(i);
+//     sayac++;
+// }
+// cout<<endl;
 
     return 0;
 }
