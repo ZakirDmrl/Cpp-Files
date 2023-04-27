@@ -1,0 +1,3 @@
+First Complex number is 2i+3
+Second Complex number is 4i+6
+Finaly Complex number is 16i+26
