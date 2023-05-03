@@ -16,7 +16,7 @@ public:
         res.imag = this->imag;
         return res;
     }
-    void print(){cout<< real << "+ i"<< imag<<endl;}
+    void print(){cout<< real << " + "<< imag<<"i"<<endl;}
 private:
 int real,imag;
 

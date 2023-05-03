@@ -1,0 +1,5 @@
+#ignored
+vectors.cpp
+vectors2.cpp
+.vscode/
+output/
